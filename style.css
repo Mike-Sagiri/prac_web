@@ -83,8 +83,8 @@ html, body{
     font-size: 1.6em;
 }
 
-.smallImg{
+.sImg{
+    vertical-align: middle;
     display: inline-block;
-    border-radius: 10%;
-    background-image: url("./snake.png");
+    border-radius: 20%;
 }
