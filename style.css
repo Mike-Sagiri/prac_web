@@ -82,3 +82,9 @@ html, body{
 .subtitle{
     font-size: 1.6em;
 }
+
+.smallImg{
+    display: inline-block;
+    border-radius: 10%;
+    background-image: url("./snake.png");
+}
