@@ -63,10 +63,20 @@ html, body{
     margin:0;
     font-family: "Open Sans", sans-serif;
 }
-.linking{
+.linking:hover{
     color: #FC9;
 }
-
+a:link{
+    color: #d40045;
+}
+a:visited{
+    color: #d00000;
+}
+*::selection{
+    background-color: #FC9;
+    color: white;
+    text-shadow: none;
+}
 .appContainer{
   max-width: 960px;
   padding: var(--m) var(--m);
