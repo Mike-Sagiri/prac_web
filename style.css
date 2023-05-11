@@ -44,6 +44,7 @@
 .navTitle{
     color:#FFF;
     margin:0;
+    display: inline-block;
 }
 
 .para{
@@ -66,10 +67,10 @@ html, body{
 .linking:hover{
     color: #FC9;
 }
-a:link{
+.linking:link{
     color: #d40045;
 }
-a:visited{
+.linking:visited{
     color: #d00000;
 }
 *::selection{
@@ -97,4 +98,25 @@ a:visited{
     vertical-align: middle;
     display: inline-block;
     border-radius: 20%;
+}
+.navPara{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.navSubcontainer{
+    flex-basis: 0;
+    flex-grow: 1;
+    
+}
+.navSubcontainer>a{
+    font-size: 1.6em;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+.navSubcontainer:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
 }
