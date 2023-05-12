@@ -103,20 +103,41 @@ html, body{
     display: inline-flex;
     justify-content: center;
     text-align: center;
-    padding: 0 10px;
 }
 .navSubcontainer{
     flex-basis: 0;
     flex-grow: 1;
-    
+    padding: 0 4px;
 }
 .navSubcontainer>a{
     font-size: 1.6em;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
+    position: relative;
 }
-.navSubcontainer:hover{
-    text-decoration: underline;
-    text-decoration-color: white;
+.navSubcontainer  a::before{
+    content: "";
+    border-left: 2px solid #fff;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transition: all 0.2s ease-out 0s;
+    transform: scaleY(0);
+    transform-origin: center top;
+}
+.navSubcontainer a:hover::before{
+    transform: none;
+}
+.navSubcontainer a::after{
+    content: "";
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    transition: all 0.2s ease-out 0s;
+    transform: scaleX(0);
+    display: block;
+}
+.navSubcontainer a:hover::after{
+    transform: none;
 }
