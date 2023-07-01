@@ -74,7 +74,7 @@ html, body{
     color: #d00000;
 }
 *::selection{
-    background-color: #FC9;
+    background-color: #A99DBA;
     color: white;
     text-shadow: none;
 }
@@ -140,4 +140,7 @@ html, body{
 }
 .navSubcontainer a:hover::after{
     transform: none;
+}
+.hr {
+    color: #A99DBA
 }
